@@ -46,6 +46,6 @@ public class Customer
 
     public double buySnack(double cashOnHand, int quantity, double cost)
     {
-        return this.setCash(this.cashOnHand - (cost * quantity));
+        return this.setCash(this.cashOnHand -= (cost * quantity));
     }
 }

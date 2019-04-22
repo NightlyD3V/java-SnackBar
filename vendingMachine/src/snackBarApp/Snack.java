@@ -64,12 +64,12 @@ public class Snack
 
     public int addSnack(int quantity)
     {   
-        return this.quantity + quantity;
+        return this.quantity += quantity;
     }
 
-    public double buySnack(int quantity)
+    public int removeSnack(int quantity)
     {
-        return this.quantity - quantity;
+        return this.quantity -= quantity;
     }
 
     public double totalCost(int quantity, double cost)

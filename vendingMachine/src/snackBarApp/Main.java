@@ -24,37 +24,37 @@ public class Main
         Snack water = new Snack("water", 20, 2.75, drink.getId());
 
         //1
-        System.out.println(c1.getName().toString() + " buys a soda and has " + (c1.buySnack(c1.getCash(), 3, soda.cost)));
+        System.out.println(c1.getName().toString() + " buys 3 sodas and has " + (c1.buySnack(c1.getCash(), 3, soda.cost)));
         System.out.println(c1.getCash());
-        System.out.println(soda.quantity);
+        System.out.println("There are now " + soda.removeSnack(3) + " sodas");
 
         //2
-        System.out.println(c1.buySnack(c1.getCash(), 1, pretzel.cost));
+        System.out.println(c1.getName().toString() + " buys 1 soda and has " + (c1.buySnack(c1.getCash(), 1, pretzel.cost)));
         System.out.println(c1.getCash());
-        System.out.println(pretzel.quantity);
+        System.out.println("There are now " + pretzel.removeSnack(1) + " pretzels left");
 
         //3
-        System.out.println(c2.buySnack(c2.getCash(), 2, soda.cost));
+        System.out.println(c2.getName().toString() + " buys 2 sodas and has " + (c2.buySnack(c2.getCash(), 2, soda.cost)));
         System.out.println(c2.getCash());
-        System.out.println(soda.quantity);
+        System.out.println("There are now " + soda.removeSnack(2) + " sodas left");
 
         //4
-        System.out.println(c1.setCash(10));
+        System.out.println(c1.getName().toString() + " finds " + c1.setCash(10) + " dollars");
         System.out.println(c1.getCash());
 
         //5
-        System.out.println(c1.getCash() - (chips.cost * 1));
+        System.out.println(c1.getName().toString() + " buys 1 bag of chips and has " + (c1.buySnack(c1.getCash(), 1, chips.cost)));
         System.out.println(c1.getCash());
-        System.out.println(chips.quantity);
+        System.out.println("There are now " + chips.removeSnack(1) + " chips left");
 
         //6
-        System.out.println("There are now: " + pretzel.addSnack(12) + " pretzels");
+        System.out.println("There are now " + pretzel.addSnack(12) + " pretzels left");
         System.out.println(pretzel.quantity);
         
         //7
-        System.out.println(c2.getCash() - (pretzel.cost * 3));
-        System.out.println(c2.getCash());
-        System.out.println(pretzel.quantity);
+        System.out.println(c1.getName().toString() + " buys 3 pretzels and has " + (c1.buySnack(c1.getCash(), 3, pretzel.cost)));
+        System.out.println(c1.getCash());
+        System.out.println("There are now " + pretzel.removeSnack(3) + " pretzels left");
 
         //stretch
     }
