@@ -39,8 +39,13 @@ public class Customer
         return cashOnHand;
     }
 
-    public void setCash(double cashOnHand)
+    public double setCash(double cashOnHand)
     {
-        this.cashOnHand = cashOnHand;
+        return this.cashOnHand = cashOnHand;
+    }
+
+    public double buySnack(double cashOnHand, int quantity, double cost)
+    {
+        return this.setCash(this.cashOnHand - (cost * quantity));
     }
 }

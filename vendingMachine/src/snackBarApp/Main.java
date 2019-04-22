@@ -24,22 +24,22 @@ public class Main
         Snack water = new Snack("water", 20, 2.75, drink.getId());
 
         //1
-        System.out.println((c1.getCash() - (soda.cost * 3)));
+        System.out.println(c1.getName().toString() + " buys a soda and has " + (c1.buySnack(c1.getCash(), 3, soda.cost)));
         System.out.println(c1.getCash());
         System.out.println(soda.quantity);
 
         //2
-        System.out.println(c1.getCash() - (pretzel.cost * 1));
+        System.out.println(c1.buySnack(c1.getCash(), 1, pretzel.cost));
         System.out.println(c1.getCash());
         System.out.println(pretzel.quantity);
 
         //3
-        System.out.println(c2.getCash() - (soda.cost * 2));
+        System.out.println(c2.buySnack(c2.getCash(), 2, soda.cost));
         System.out.println(c2.getCash());
         System.out.println(soda.quantity);
 
         //4
-        System.out.println(c1.getCash() + 10);
+        System.out.println(c1.setCash(10));
         System.out.println(c1.getCash());
 
         //5
@@ -48,13 +48,15 @@ public class Main
         System.out.println(chips.quantity);
 
         //6
-        System.out.println(pretzel.quantity + 12);
+        System.out.println("There are now: " + pretzel.addSnack(12) + " pretzels");
         System.out.println(pretzel.quantity);
         
         //7
         System.out.println(c2.getCash() - (pretzel.cost * 3));
         System.out.println(c2.getCash());
         System.out.println(pretzel.quantity);
+
+        //stretch
     }
     public static void main(String[] args)
     {

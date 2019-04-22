@@ -61,4 +61,19 @@ public class Snack
     {
         return quantity;
     }  
+
+    public int addSnack(int quantity)
+    {   
+        return this.quantity + quantity;
+    }
+
+    public double buySnack(int quantity)
+    {
+        return this.quantity - quantity;
+    }
+
+    public double totalCost(int quantity, double cost)
+    {
+        return quantity * cost;
+    }
 }
