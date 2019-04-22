@@ -1,4 +1,4 @@
-package snackBarApp;
+package snackBarApp;;
 
 public class VendingMachine
 {
@@ -10,6 +10,8 @@ public class VendingMachine
     //constructor
     public VendingMachine(String name)
     {
+        maxId++;
+        id = maxId;
         this.name = name;
     }
 
@@ -19,7 +21,7 @@ public class VendingMachine
         return id;
     }
 
-    public int setId(int id)
+    public void setId(int id)
     {
         this.id = id;
     }
@@ -29,7 +31,7 @@ public class VendingMachine
         return name;
     }
 
-    public String setName(String name)
+    public void setName(String name)
     {
         this.name = name;
     }

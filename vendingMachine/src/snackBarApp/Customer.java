@@ -1,4 +1,4 @@
-package snackBarApp;
+package snackBarApp;;
 
 public class Customer 
 {
@@ -6,10 +6,10 @@ public class Customer
     private static int maxId = 0;
     private int id;
     private String name;
-    private int cashOnHand = 0;
+    private double cashOnHand = 0.0;
 
     //constructor 
-    public Customer(String name, int cashOnHand)
+    public Customer(String name, double cashOnHand)
     {
         maxId++;
         id = maxId;
@@ -29,18 +29,18 @@ public class Customer
         return name;
     }
 
-    public String setName(String name)
+    public void setName(String name)
     {
         this.name = name;
     }
 
-    public int getCash()
+    public double getCash()
     {
         return cashOnHand;
     }
 
-    public int setCash(int cashOnHand)
+    public void setCash(double cashOnHand)
     {
-        this.getCashOnHand = cashOnHand;
+        this.cashOnHand = cashOnHand;
     }
 }

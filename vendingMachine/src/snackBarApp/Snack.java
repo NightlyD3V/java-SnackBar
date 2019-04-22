@@ -1,4 +1,4 @@
-package snackBarApp;
+package snackBarApp;;
 
 public class Snack
 {
@@ -32,5 +32,33 @@ public class Snack
         return name;
     }
 
-    
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    public double getCost()
+    {
+        return cost;
+    }
+
+    public void setCost(int cost)
+    {
+        this.cost = cost;
+    }
+
+    public int getMachineId()
+    {
+        return machineId;
+    }
+
+    public void setMachineId(int machineId)
+    {
+        this.machineId = machineId;
+    }
+
+    public int getQuantity()
+    {
+        return quantity;
+    }  
 }
